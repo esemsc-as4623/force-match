@@ -112,8 +112,10 @@ class SemanticAnalyzer:
             profile.motivations.append("protection")
         if "power" in text_lower or "rule" in text_lower:
             profile.motivations.append("power")
-        if "justice" in text_lower or "peace" in text_lower:
+        if "justice" in text_lower:
             profile.motivations.append("justice")
+        if "peace" in text_lower:
+            profile.motivations.append("peace")
         if "revenge" in text_lower:
             profile.motivations.append("revenge")
         if "freedom" in text_lower:
