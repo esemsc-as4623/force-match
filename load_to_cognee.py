@@ -6,6 +6,7 @@ Reads the data.ttl file, parses it to extract character data, and processes it t
 
 import asyncio
 import cognee
+from cognee import SearchType
 import os
 import logging
 from pathlib import Path
@@ -77,6 +78,19 @@ def parse_rdf_data(file_path):
     logger.info(f"Extracted {len(characters)} characters from RDF.")
     return characters
 
+async def extract_relationships(character_name):
+    """
+    Queries the Cognee knowledge graph for character relationships.
+    """
+    try:
+        query = f"Who is {character_name} related to? List family, master, apprentice, allies, and rivals based on the data."
+        # Use GRAPH_COMPLETION to leverage the graph structure
+        results = await cognee.search(query, query_type=SearchType.GRAPH_COMPLETION)
+        return results
+    except Exception as e:
+        logger.error(f"Error extracting relationships for {character_name}: {e}")
+        return []
+
 async def main():
     # Load environment variables
     load_dotenv()
@@ -122,6 +136,36 @@ async def main():
     await cognee.cognify()
     
     logger.info("Cognee processing complete.")
+
+    # Step 3: Extract Relationships
+    logger.info("Extracting relationships from Knowledge Graph...")
+    
+    # Limit to a subset for demonstration/performance if needed, or process all
+    # For now, we'll process all but with a counter to track progress
+    count = 0
+    total = len(characters)
+    
+    for char_uri, char_data in characters.items():
+        count += 1
+        name = char_data.get("label", "Unknown")
+        if name == "Unknown":
+            continue
+            
+        logger.info(f"[{count}/{total}] Extracting relationships for {name}...")
+        relationships = await extract_relationships(name)
+        
+        # Store relationships in the character data structure
+        # relationships is likely a list of text results from GRAPH_COMPLETION
+        char_data["relationships"] = relationships
+        
+        logger.debug(f"Relationships for {name}: {relationships}")
+
+    logger.info("Relationship extraction complete.")
+    
+    # Debug: Print a sample with relationships
+    if characters:
+        first_char_key = list(characters.keys())[0]
+        logger.info(f"Enriched character data ({characters[first_char_key].get('label')}): {characters[first_char_key]}")
 
 if __name__ == '__main__':
     asyncio.run(main())
