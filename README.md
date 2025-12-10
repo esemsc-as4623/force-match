@@ -16,8 +16,12 @@ Ensure you have the following models downloaded in LM Studio:
 2. Go to the **Local Server** tab (double-headed arrow icon).
 3. **Load the LLM:** Select `deepseek-r1-0528-qwen3-8b` from the top dropdown.
 4. **Load the Embedding Model:**
-   - In the "Text Embedding Model" section (you may need to scroll down or enable it in settings depending on your LM Studio version), select `nomic-embed-text-v1.5-GGUF`.
-   - *Note:* If your version of LM Studio doesn't support simultaneous loading easily, ensure the embedding model is available to be called via the API.
+   - **Recommended Method (CLI):** Open a terminal and run:
+     ```bash
+     lms load text-embedding-nomic-embed-text-v1.5
+     ```
+     *Note: If the command fails, run `lms ls` to see available models and copy the exact name.*
+   - **Alternative (GUI):** In newer versions of LM Studio, look for a "Text Embedding Model" slot in the Server tab.
 5. **Start Server:** Click the green **Start Server** button.
    - Ensure the server is running on **Port 1234** (default).
    - The endpoint should be `http://localhost:1234/v1`.

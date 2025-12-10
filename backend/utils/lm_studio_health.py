@@ -23,7 +23,7 @@ async def check_lm_studio_health():
     embedding_endpoint = os.getenv("EMBEDDING_ENDPOINT", "http://127.0.0.1:1234/v1")
     
     llm_model = os.getenv("LLM_MODEL", "deepseek-r1-0528-qwen3-8b")
-    embedding_model = os.getenv("EMBEDDING_MODEL", "nomic-embed-text-v1.5-GGUF")
+    embedding_model = os.getenv("EMBEDDING_MODEL", "text-embedding-nomic-embed-text-v1.5")
 
     # Strip /v1 if present for base url checks, but we usually hit /v1/models or specific endpoints
     # LM Studio usually serves at http://localhost:1234/v1
@@ -32,7 +32,8 @@ async def check_lm_studio_health():
     logger.debug(f"LLM Model: {llm_model}")
     logger.debug(f"Embedding Model: {embedding_model}")
 
-    async with httpx.AsyncClient(timeout=5.0) as client:
+    # Increased timeout to 60s to account for model loading times
+    async with httpx.AsyncClient(timeout=60.0) as client:
         # 1. Check LLM Endpoint (Chat Completions)
         try:
             logger.debug(f"Testing LLM endpoint: {llm_endpoint}/chat/completions")
@@ -47,6 +48,9 @@ async def check_lm_studio_health():
             logger.debug(f"LLM Response: {response.json()}")
         except httpx.ConnectError:
             logger.error(f"❌ Failed to connect to LLM endpoint at {llm_endpoint}. Is LM Studio running?")
+            return False
+        except httpx.TimeoutException:
+            logger.error(f"❌ Request timed out checking LLM endpoint. The model might be loading or running slowly.")
             return False
         except httpx.HTTPStatusError as e:
             logger.error(f"❌ LLM Endpoint returned error {e.response.status_code}: {e.response.text}")
@@ -68,6 +72,9 @@ async def check_lm_studio_health():
             logger.debug(f"Embedding Response: {response.json()}")
         except httpx.ConnectError:
             logger.error(f"❌ Failed to connect to Embedding endpoint at {embedding_endpoint}. Is LM Studio running?")
+            return False
+        except httpx.TimeoutException:
+            logger.error(f"❌ Request timed out checking Embedding endpoint. The model might be loading or running slowly.")
             return False
         except httpx.HTTPStatusError as e:
             logger.error(f"❌ Embedding Endpoint returned error {e.response.status_code}: {e.response.text}")
