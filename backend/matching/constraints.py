@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from typing import List, Dict, Any, Type, Optional
 from enum import Enum
 from backend.knowledge.relationships import RelationshipType
+from backend.knowledge.graph_utils import build_graph, calculate_degree
 
 @dataclass
 class ConstraintViolation:
@@ -209,4 +210,153 @@ class HomeworldDiversityConstraint(Constraint):
                 severity="INFO" # Usually just for diversity, not blocking
             ))
             
+        return violations
+
+@ConstraintRegistry.register
+class DegreeOfSeparationConstraint(Constraint):
+    """
+    Ensures giver and receiver are within (or outside) a specific distance in the graph.
+    Default: Checks if they are too close (e.g. distance < 2).
+    """
+    @property
+    def name(self) -> str:
+        return "degree_of_separation"
+
+    @property
+    def description(self) -> str:
+        return "Checks the degree of separation between characters."
+
+    def validate(self, giver: Dict[str, Any], receiver: Dict[str, Any], enriched_data: Dict[str, Any]) -> List[ConstraintViolation]:
+        violations = []
+        
+        # We need to build the graph to calculate degree. 
+        # In a real production system, the graph might be pre-built or cached.
+        # For this implementation, we build it on the fly.
+        
+        graph = build_graph(enriched_data)
+        
+        giver_name = giver.get("label", giver.get("name", ""))
+        receiver_name = receiver.get("label", receiver.get("name", ""))
+        
+        degree = calculate_degree(graph, giver_name, receiver_name)
+        
+        # Constraint: Avoid if too close (e.g. direct connection or 1 hop)
+        min_distance = 2
+        
+        if degree < min_distance:
+             violations.append(ConstraintViolation(
+                constraint_name=self.name,
+                description=f"Characters are too close in the graph (degree {degree} < {min_distance}).",
+                severity="WARNING"
+            ))
+            
+        return violations
+
+@ConstraintRegistry.register
+class DirectContactAvoidanceConstraint(Constraint):
+    """
+    Checks for direct interaction history (if available in semantics).
+    """
+    @property
+    def name(self) -> str:
+        return "direct_contact_avoidance"
+
+    @property
+    def description(self) -> str:
+        return "Checks if characters have a history of direct contact."
+
+    def validate(self, giver: Dict[str, Any], receiver: Dict[str, Any], enriched_data: Dict[str, Any]) -> List[ConstraintViolation]:
+        violations = []
+        
+        # Check semantics for mentions of the other character
+        giver_semantics = giver.get("semantics", {})
+        receiver_name = receiver.get("label", receiver.get("name", ""))
+        
+        if not giver_semantics or not receiver_name:
+            return violations
+            
+        # If semantics is a dict (from JSON) or SemanticProfile object
+        history = []
+        if isinstance(giver_semantics, dict):
+            history = giver_semantics.get("traits", []) + giver_semantics.get("motivations", [])
+        elif hasattr(giver_semantics, "traits"):
+             history = giver_semantics.traits + giver_semantics.motivations
+             
+        for text in history:
+            if receiver_name.lower() in text.lower():
+                 violations.append(ConstraintViolation(
+                    constraint_name=self.name,
+                    description=f"Giver's semantic profile mentions receiver: '{text[:50]}...'",
+                    severity="WARNING"
+                ))
+                
+        return violations
+
+@ConstraintRegistry.register
+class TimelineEraConstraint(Constraint):
+    """
+    Checks if characters belong to compatible eras.
+    """
+    @property
+    def name(self) -> str:
+        return "timeline_era"
+
+    @property
+    def description(self) -> str:
+        return "Checks if characters are from compatible timeline eras."
+
+    def validate(self, giver: Dict[str, Any], receiver: Dict[str, Any], enriched_data: Dict[str, Any]) -> List[ConstraintViolation]:
+        violations = []
+        
+        # In SWAPI, we might have birth_year.
+        # We can try to parse it. e.g. "19BBY"
+        
+        def parse_year(year_str: str) -> float:
+            if not year_str or year_str == "unknown":
+                return None
+            try:
+                if "BBY" in year_str:
+                    return -float(year_str.replace("BBY", ""))
+                elif "ABY" in year_str:
+                    return float(year_str.replace("ABY", ""))
+                else:
+                    return float(year_str) # Assume ABY if no suffix? Or just raw number
+            except ValueError:
+                return None
+
+        giver_year = parse_year(giver.get("birth_year"))
+        receiver_year = parse_year(receiver.get("birth_year"))
+        
+        if giver_year is not None and receiver_year is not None:
+            # If birth years are more than 100 years apart, maybe they can't meet?
+            # Unless they are long-lived species (Yoda).
+            # This is a simple heuristic.
+            
+            diff = abs(giver_year - receiver_year)
+            if diff > 60: # Arbitrary generation gap
+                 violations.append(ConstraintViolation(
+                    constraint_name=self.name,
+                    description=f"Large age gap ({diff} years) between characters.",
+                    severity="INFO"
+                ))
+        
+        return violations
+
+@ConstraintRegistry.register
+class AllegianceChainConstraint(Constraint):
+    """
+    Checks for complex allegiance patterns.
+    """
+    @property
+    def name(self) -> str:
+        return "allegiance_chain"
+
+    @property
+    def description(self) -> str:
+        return "Checks for conflicting allegiance chains."
+
+    def validate(self, giver: Dict[str, Any], receiver: Dict[str, Any], enriched_data: Dict[str, Any]) -> List[ConstraintViolation]:
+        violations = []
+        # Placeholder for advanced logic. 
+        # Could check if Giver -> Master -> Enemy -> Receiver
         return violations
