@@ -4,7 +4,7 @@ import os
 from fastapi import FastAPI, Request, Response, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from backend.utils.lm_studio_health import check_lm_studio_health
-from backend.api.endpoints import matching
+from backend.api.endpoints import matching, recommendations
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -33,6 +33,7 @@ app.add_middleware(
 
 # Include Routers
 app.include_router(matching.router, prefix="/api")
+app.include_router(recommendations.router, prefix="/api")
 
 # Logging Middleware
 @app.middleware("http")
