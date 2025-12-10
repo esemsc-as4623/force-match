@@ -91,6 +91,19 @@ async def extract_relationships(character_name):
         logger.error(f"Error extracting relationships for {character_name}: {e}")
         return []
 
+async def enrich_character_semantics(character_name):
+    """
+    Queries the Cognee knowledge graph for semantic enrichment (personality, motivations).
+    """
+    try:
+        query = f"Describe the personality, motivations, and narrative role of {character_name}. Provide a concise profile based on the data."
+        # Use GRAPH_COMPLETION to leverage the graph structure for deeper insights
+        results = await cognee.search(query, query_type=SearchType.GRAPH_COMPLETION)
+        return results
+    except Exception as e:
+        logger.error(f"Error enriching semantics for {character_name}: {e}")
+        return []
+
 async def main():
     # Load environment variables
     load_dotenv()
@@ -155,14 +168,19 @@ async def main():
         relationships = await extract_relationships(name)
         
         # Store relationships in the character data structure
-        # relationships is likely a list of text results from GRAPH_COMPLETION
         char_data["relationships"] = relationships
         
         logger.debug(f"Relationships for {name}: {relationships}")
 
-    logger.info("Relationship extraction complete.")
+        # Step 4: Semantic Enrichment
+        logger.info(f"[{count}/{total}] Enriching semantics for {name}...")
+        semantics = await enrich_character_semantics(name)
+        char_data["semantics"] = semantics
+        logger.debug(f"Semantics for {name}: {semantics}")
+
+    logger.info("Relationship extraction and semantic enrichment complete.")
     
-    # Debug: Print a sample with relationships
+    # Debug: Print a sample with relationships and semantics
     if characters:
         first_char_key = list(characters.keys())[0]
         logger.info(f"Enriched character data ({characters[first_char_key].get('label')}): {characters[first_char_key]}")
