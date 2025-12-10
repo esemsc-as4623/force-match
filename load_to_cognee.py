@@ -21,6 +21,7 @@ sys.path.append(str(Path(__file__).parent)) # Ensure backend module is found
 from backend.utils.lm_studio_health import check_lm_studio_health
 from backend.knowledge.relationships import RelationshipClassifier, SemanticAnalyzer
 from backend.knowledge.graph_utils import build_graph, calculate_degree
+from backend.data.enriched_store import EnrichedStore
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -233,6 +234,12 @@ async def main():
         first_char_key = list(characters.keys())[0]
         logger.info(f"Final Enriched Character Data Sample ({characters[first_char_key].get('label')}): {characters[first_char_key]}")
     
+    # Save enriched data
+    store = EnrichedStore()
+    output_file = Path(__file__).parent / "data" / "enriched_characters.json"
+    store.save_data(characters, str(output_file))
+    logger.info(f"Enriched data saved to {output_file}")
+
     return characters
 
 if __name__ == '__main__':

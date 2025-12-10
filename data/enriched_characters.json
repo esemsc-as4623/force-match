@@ -1,0 +1,1791 @@
+{
+  "https://swapi.co/resource/human/42": {
+    "uri": "https://swapi.co/resource/human/42",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Quarsh Panaka",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "62BBY",
+    "desc": "None",
+    "eyeColor": "brown",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "black",
+    "height": "183.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "skinColor": "dark"
+  },
+  "https://swapi.co/resource/human/88": {
+    "uri": "https://swapi.co/resource/human/88",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Captain Phasma",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "\"Captain Phasma is a fictional character in the Star Wars franchise, portrayed by Gwendoline Christie. Introduced in Star Wars: The Force Awakens (2015), the first film in the Star Wars sequel trilogy, Phasma is the commander of the First Orders force of stormtroopers. Christie confirmed that the character would reappear in the next of the trilogys films, Star Wars: The Last Jedi. The character also made an additional appearance in Before the Awakening, an anthology book set before the events of The Force Awakens.\", \"J. J. Abrams created Phasma from an armor design originally developed for Kylo Ren and named her after the 1979 horror film Phantasm. The character was originally conceived as male before being changed to female. Phasma appeared prominently in promotion and marketing for The Force Awakens, but the characters ultimately minor role in the film was the subject of criticism. Nonetheless, merchandise featuring the character found success and her figure was the bestselling of all Force Awakens action figures on Amazon.co.uk.3\"",
+    "film": "https://swapi.co/resource/film/7",
+    "gender": "female",
+    "homeworld": "https://swapi.co/resource/planet/28"
+  },
+  "https://swapi.co/resource/aleena/47": {
+    "uri": "https://swapi.co/resource/aleena/47",
+    "type": [
+      "https://swapi.co/vocabulary/Aleena",
+      "https://swapi.co/vocabulary/Character"
+    ],
+    "label": "Ratts Tyerell",
+    "http://www.ontotext.com/business-object/type": "Aleena",
+    "desc": "None",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "79.0",
+    "homeworld": "https://swapi.co/resource/planet/38",
+    "mass": "15.0",
+    "skinColor": "grey, blue"
+  },
+  "https://swapi.co/resource/besalisk/71": {
+    "uri": "https://swapi.co/resource/besalisk/71",
+    "type": [
+      "https://swapi.co/vocabulary/Besalisk",
+      "https://swapi.co/vocabulary/Character"
+    ],
+    "label": "Dexter Jettster",
+    "http://www.ontotext.com/business-object/type": "Besalisk",
+    "desc": "None",
+    "eyeColor": "yellow",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "198.0",
+    "homeworld": "https://swapi.co/resource/planet/55",
+    "mass": "102.0",
+    "skinColor": "brown"
+  },
+  "https://swapi.co/resource/droid/23": {
+    "uri": "https://swapi.co/resource/droid/23",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Droid"
+    ],
+    "label": "IG-88",
+    "http://www.ontotext.com/business-object/type": "Droid",
+    "birthYear": "15BBY",
+    "desc": "None",
+    "eyeColor": "red",
+    "film": "https://swapi.co/resource/film/2",
+    "gender": "none",
+    "hairColor": "none",
+    "height": "200.0",
+    "homeworld": "https://swapi.co/resource/planet/28",
+    "mass": "140.0",
+    "skinColor": "metal"
+  },
+  "https://swapi.co/resource/droid/75": {
+    "uri": "https://swapi.co/resource/droid/75",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Droid"
+    ],
+    "label": "R4-P17",
+    "http://www.ontotext.com/business-object/type": "Droid",
+    "desc": "None",
+    "eyeColor": "red, blue",
+    "film": [
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "female",
+    "hairColor": "none",
+    "height": "96.0",
+    "homeworld": "https://swapi.co/resource/planet/28",
+    "skinColor": "silver, red"
+  },
+  "https://swapi.co/resource/droid/8": {
+    "uri": "https://swapi.co/resource/droid/8",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Droid"
+    ],
+    "label": "R5-D4",
+    "http://www.ontotext.com/business-object/type": "Droid",
+    "desc": "None",
+    "eyeColor": "red",
+    "film": "https://swapi.co/resource/film/1",
+    "height": "97.0",
+    "homeworld": "https://swapi.co/resource/planet/1",
+    "mass": "32.0",
+    "skinColor": "white, red"
+  },
+  "https://swapi.co/resource/droid/87": {
+    "uri": "https://swapi.co/resource/droid/87",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Droid"
+    ],
+    "label": "BB8",
+    "http://www.ontotext.com/business-object/type": "Droid",
+    "desc": "BB-8 (or Beebee-Ate) is a droid character in the Star Wars franchise, first appearing in the 2015 film Star Wars: The Force Awakens. Spherical with a free-moving domed head, BB-8 is portrayed by both a rod puppet and a remote-controlled robotic unit.",
+    "eyeColor": "black",
+    "film": "https://swapi.co/resource/film/7",
+    "gender": "none",
+    "hairColor": "none",
+    "homeworld": "https://swapi.co/resource/planet/28",
+    "skinColor": "none"
+  },
+  "https://swapi.co/resource/dug/41": {
+    "uri": "https://swapi.co/resource/dug/41",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Dug"
+    ],
+    "label": "Sebulba",
+    "http://www.ontotext.com/business-object/type": "Dug",
+    "desc": "None",
+    "eyeColor": "orange",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "112.0",
+    "homeworld": "https://swapi.co/resource/planet/35",
+    "mass": "40.0",
+    "skinColor": "grey, red"
+  },
+  "https://swapi.co/resource/ewok/30": {
+    "uri": "https://swapi.co/resource/ewok/30",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Ewok"
+    ],
+    "label": "Wicket Systri Warrick",
+    "http://www.ontotext.com/business-object/type": "Ewok",
+    "birthYear": "8BBY",
+    "desc": "None",
+    "eyeColor": "brown",
+    "film": "https://swapi.co/resource/film/3",
+    "gender": "male",
+    "hairColor": "brown",
+    "height": "88.0",
+    "homeworld": "https://swapi.co/resource/planet/7",
+    "mass": "20.0",
+    "skinColor": "brown"
+  },
+  "https://swapi.co/resource/gungan/37": {
+    "uri": "https://swapi.co/resource/gungan/37",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Gungan"
+    ],
+    "label": "Roos Tarpals",
+    "http://www.ontotext.com/business-object/type": "Gungan",
+    "desc": "None",
+    "eyeColor": "orange",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "224.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "mass": "82.0",
+    "skinColor": "grey"
+  },
+  "https://swapi.co/resource/gungan/38": {
+    "uri": "https://swapi.co/resource/gungan/38",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Gungan"
+    ],
+    "label": "Rugor Nass",
+    "http://www.ontotext.com/business-object/type": "Gungan",
+    "desc": "None",
+    "eyeColor": "orange",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "206.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "skinColor": "green"
+  },
+  "https://swapi.co/resource/human/26": {
+    "uri": "https://swapi.co/resource/human/26",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Lobot",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "37BBY",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": "https://swapi.co/resource/film/2",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "175.0",
+    "homeworld": "https://swapi.co/resource/planet/6",
+    "mass": "79.0",
+    "skinColor": "light"
+  },
+  "https://swapi.co/resource/human/28": {
+    "uri": "https://swapi.co/resource/human/28",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Mon Mothma",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "48BBY",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": "https://swapi.co/resource/film/3",
+    "gender": "female",
+    "hairColor": "auburn",
+    "height": "150.0",
+    "homeworld": "https://swapi.co/resource/planet/32",
+    "skinColor": "fair"
+  },
+  "https://swapi.co/resource/human/34": {
+    "uri": "https://swapi.co/resource/human/34",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Finis Valorum",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "91BBY",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "blond",
+    "height": "170.0",
+    "homeworld": "https://swapi.co/resource/planet/9",
+    "skinColor": "fair"
+  },
+  "https://swapi.co/resource/human/39": {
+    "uri": "https://swapi.co/resource/human/39",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Ric Olié",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "brown",
+    "height": "183.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "skinColor": "fair",
+    "starship": "https://swapi.co/resource/starship/40"
+  },
+  "https://swapi.co/resource/human/61": {
+    "uri": "https://swapi.co/resource/human/61",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Cordé",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "None",
+    "eyeColor": "brown",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "female",
+    "hairColor": "brown",
+    "height": "157.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "skinColor": "light"
+  },
+  "https://swapi.co/resource/human/62": {
+    "uri": "https://swapi.co/resource/human/62",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Cliegg Lars",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "82BBY",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "male",
+    "hairColor": "brown",
+    "height": "183.0",
+    "homeworld": "https://swapi.co/resource/planet/1",
+    "skinColor": "fair"
+  },
+  "https://swapi.co/resource/human/66": {
+    "uri": "https://swapi.co/resource/human/66",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Dormé",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "None",
+    "eyeColor": "brown",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "female",
+    "hairColor": "brown",
+    "height": "165.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "skinColor": "light"
+  },
+  "https://swapi.co/resource/human/69": {
+    "uri": "https://swapi.co/resource/human/69",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Jango Fett",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "66BBY",
+    "desc": "Jango Fett is a fictional character in the Star Wars franchise, created by George Lucas. He made his debut in the 2002 film Star Wars: Episode II – Attack of the Clones, where he was portrayed by actor Temuera Morrison., In the context of the Star Wars universe, Jango Fett was regarded as the best mercenary in the galaxy during the final years of the Republic. A naturally skilled warrior, he was eventually chosen to serve as the genetic template for the Clone Army of the Galactic Republic. These clone soldiers were genetically modified to be predisposed toward unquestioning obedience to the chain of command, unlike their highly independent progenitor. Jango was also the \"father\" of unaltered clone Boba Fett, which he requested as part of his contract with the Kaminoans.",
+    "eyeColor": "brown",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "male",
+    "hairColor": "black",
+    "height": "183.0",
+    "homeworld": "https://swapi.co/resource/planet/53",
+    "mass": "79.0",
+    "skinColor": "tan"
+  },
+  "https://swapi.co/resource/human/74": {
+    "uri": "https://swapi.co/resource/human/74",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Jocasta Nu",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "female",
+    "hairColor": "white",
+    "height": "167.0",
+    "homeworld": "https://swapi.co/resource/planet/9",
+    "skinColor": "fair"
+  },
+  "https://swapi.co/resource/human/84": {
+    "uri": "https://swapi.co/resource/human/84",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Finn",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "Finn, designation number FN-2187, is a fictional character in the Star Wars franchise. He first appeared in the 2015 film Star Wars: The Force Awakens in which he is a stormtrooper for the First Order who flees and turns against it after being shocked by their cruelty in his first combat mission. He is played by British actor John Boyega, who will reprise the role in Star Wars: The Last Jedi.",
+    "eyeColor": "dark",
+    "film": "https://swapi.co/resource/film/7",
+    "gender": "male",
+    "hairColor": "black",
+    "homeworld": "https://swapi.co/resource/planet/28",
+    "skinColor": "dark"
+  },
+  "https://swapi.co/resource/human/85": {
+    "uri": "https://swapi.co/resource/human/85",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Rey",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "None",
+    "eyeColor": "hazel",
+    "film": "https://swapi.co/resource/film/7",
+    "gender": "female",
+    "hairColor": "brown",
+    "homeworld": "https://swapi.co/resource/planet/28",
+    "skinColor": "light"
+  },
+  "https://swapi.co/resource/kaminoan/72": {
+    "uri": "https://swapi.co/resource/kaminoan/72",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Kaminoan"
+    ],
+    "label": "Lama Su",
+    "http://www.ontotext.com/business-object/type": "Kaminoan",
+    "desc": "None",
+    "eyeColor": "black",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "229.0",
+    "homeworld": "https://swapi.co/resource/planet/10",
+    "mass": "88.0",
+    "skinColor": "grey"
+  },
+  "https://swapi.co/resource/kaminoan/73": {
+    "uri": "https://swapi.co/resource/kaminoan/73",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Kaminoan"
+    ],
+    "label": "Taun We",
+    "http://www.ontotext.com/business-object/type": "Kaminoan",
+    "desc": "None",
+    "eyeColor": "black",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "female",
+    "hairColor": "none",
+    "height": "213.0",
+    "homeworld": "https://swapi.co/resource/planet/10",
+    "skinColor": "grey"
+  },
+  "https://swapi.co/resource/mirialan/65": {
+    "uri": "https://swapi.co/resource/mirialan/65",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Mirialan"
+    ],
+    "label": "Barriss Offee",
+    "http://www.ontotext.com/business-object/type": "Mirialan",
+    "birthYear": "40BBY",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "female",
+    "hairColor": "black",
+    "height": "166.0",
+    "homeworld": "https://swapi.co/resource/planet/51",
+    "mass": "50.0",
+    "skinColor": "yellow"
+  },
+  "https://swapi.co/resource/muun/77": {
+    "uri": "https://swapi.co/resource/muun/77",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Muun"
+    ],
+    "label": "San Hill",
+    "http://www.ontotext.com/business-object/type": "Muun",
+    "desc": "None",
+    "eyeColor": "gold",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "191.0",
+    "homeworld": "https://swapi.co/resource/planet/57",
+    "skinColor": "grey"
+  },
+  "https://swapi.co/resource/pauan/83": {
+    "uri": "https://swapi.co/resource/pauan/83",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Pauan"
+    ],
+    "label": "Tion Medon",
+    "http://www.ontotext.com/business-object/type": "Pauan",
+    "desc": "None",
+    "eyeColor": "black",
+    "film": "https://swapi.co/resource/film/6",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "206.0",
+    "homeworld": "https://swapi.co/resource/planet/12",
+    "mass": "80.0",
+    "skinColor": "grey"
+  },
+  "https://swapi.co/resource/quermian/57": {
+    "uri": "https://swapi.co/resource/quermian/57",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Quermian"
+    ],
+    "label": "Yarael Poof",
+    "http://www.ontotext.com/business-object/type": "Quermian",
+    "desc": "None",
+    "eyeColor": "yellow",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "264.0",
+    "homeworld": "https://swapi.co/resource/planet/48",
+    "skinColor": "white"
+  },
+  "https://swapi.co/resource/skakoan/76": {
+    "uri": "https://swapi.co/resource/skakoan/76",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Skakoan"
+    ],
+    "label": "Wat Tambor",
+    "http://www.ontotext.com/business-object/type": "Skakoan",
+    "desc": "None",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "193.0",
+    "homeworld": "https://swapi.co/resource/planet/56",
+    "mass": "48.0",
+    "skinColor": "green, grey"
+  },
+  "https://swapi.co/resource/toong/50": {
+    "uri": "https://swapi.co/resource/toong/50",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Toong"
+    ],
+    "label": "Ben Quadinaros",
+    "http://www.ontotext.com/business-object/type": "Toong",
+    "desc": "None",
+    "eyeColor": "orange",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "163.0",
+    "homeworld": "https://swapi.co/resource/planet/41",
+    "mass": "65.0",
+    "skinColor": "grey, green, yellow"
+  },
+  "https://swapi.co/resource/trandoshan/24": {
+    "uri": "https://swapi.co/resource/trandoshan/24",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Trandoshan"
+    ],
+    "label": "Bossk",
+    "http://www.ontotext.com/business-object/type": "Trandoshan",
+    "birthYear": "53BBY",
+    "desc": "None",
+    "eyeColor": "red",
+    "film": "https://swapi.co/resource/film/2",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "190.0",
+    "homeworld": "https://swapi.co/resource/planet/29",
+    "mass": "113.0",
+    "skinColor": "green"
+  },
+  "https://swapi.co/resource/twilek/45": {
+    "uri": "https://swapi.co/resource/twilek/45",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Twilek"
+    ],
+    "label": "Bib Fortuna",
+    "http://www.ontotext.com/business-object/type": "Twilek",
+    "desc": "None",
+    "eyeColor": "pink",
+    "film": "https://swapi.co/resource/film/3",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "180.0",
+    "homeworld": "https://swapi.co/resource/planet/37",
+    "skinColor": "pale"
+  },
+  "https://swapi.co/resource/umbaran/82": {
+    "uri": "https://swapi.co/resource/umbaran/82",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Umbaran"
+    ],
+    "label": "Sly Moore",
+    "http://www.ontotext.com/business-object/type": "Umbaran",
+    "desc": "None",
+    "eyeColor": "white",
+    "film": [
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "female",
+    "hairColor": "none",
+    "height": "178.0",
+    "homeworld": "https://swapi.co/resource/planet/60",
+    "mass": "48.0",
+    "skinColor": "pale"
+  },
+  "https://swapi.co/resource/vulptereen/48": {
+    "uri": "https://swapi.co/resource/vulptereen/48",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Vulptereen"
+    ],
+    "label": "Dud Bolt",
+    "http://www.ontotext.com/business-object/type": "Vulptereen",
+    "desc": "None",
+    "eyeColor": "yellow",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "94.0",
+    "homeworld": "https://swapi.co/resource/planet/39",
+    "mass": "45.0",
+    "skinColor": "blue, grey"
+  },
+  "https://swapi.co/resource/wookiee/80": {
+    "uri": "https://swapi.co/resource/wookiee/80",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Wookiee"
+    ],
+    "label": "Tarfful",
+    "http://www.ontotext.com/business-object/type": "Wookiee",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": "https://swapi.co/resource/film/6",
+    "gender": "male",
+    "hairColor": "brown",
+    "height": "234.0",
+    "homeworld": "https://swapi.co/resource/planet/14",
+    "mass": "136.0",
+    "skinColor": "brown"
+  },
+  "https://swapi.co/resource/xexto/49": {
+    "uri": "https://swapi.co/resource/xexto/49",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Xexto"
+    ],
+    "label": "Gasgano",
+    "http://www.ontotext.com/business-object/type": "Xexto",
+    "desc": "None",
+    "eyeColor": "black",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "122.0",
+    "homeworld": "https://swapi.co/resource/planet/40",
+    "skinColor": "white, blue"
+  },
+  "https://swapi.co/resource/chagrian/59": {
+    "uri": "https://swapi.co/resource/chagrian/59",
+    "type": [
+      "https://swapi.co/vocabulary/Chagrian",
+      "https://swapi.co/vocabulary/Character"
+    ],
+    "label": "Mas Amedda",
+    "http://www.ontotext.com/business-object/type": "Chagrian",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5"
+    ],
+    "gender": "male",
+    "hairColor": "none",
+    "height": "196.0",
+    "homeworld": "https://swapi.co/resource/planet/50",
+    "skinColor": "blue"
+  },
+  "https://swapi.co/resource/clawdite/70": {
+    "uri": "https://swapi.co/resource/clawdite/70",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Clawdite"
+    ],
+    "label": "Zam Wesell",
+    "http://www.ontotext.com/business-object/type": "Clawdite",
+    "desc": "None",
+    "eyeColor": "yellow",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "female",
+    "hairColor": "blonde",
+    "height": "168.0",
+    "homeworld": "https://swapi.co/resource/planet/54",
+    "mass": "55.0",
+    "skinColor": "fair, green, yellow",
+    "vehicle": "https://swapi.co/resource/vehicle/45"
+  },
+  "https://swapi.co/resource/geonosian/63": {
+    "uri": "https://swapi.co/resource/geonosian/63",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Geonosian"
+    ],
+    "label": "Poggle the Lesser",
+    "http://www.ontotext.com/business-object/type": "Geonosian",
+    "desc": "None",
+    "eyeColor": "yellow",
+    "film": [
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "none",
+    "height": "183.0",
+    "homeworld": "https://swapi.co/resource/planet/11",
+    "mass": "80.0",
+    "skinColor": "green"
+  },
+  "https://swapi.co/resource/gungan/36": {
+    "uri": "https://swapi.co/resource/gungan/36",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Gungan"
+    ],
+    "label": "Jar Jar Binks",
+    "http://www.ontotext.com/business-object/type": "Gungan",
+    "birthYear": "52BBY",
+    "desc": "Jar Jar Binks is a fictional character from the Star Wars saga created by George Lucas. A major character in Star Wars: Episode I – The Phantom Menace, he also has a smaller role in Episode II: Attack of the Clones, and a one-line cameo in Episode III: Revenge of the Sith, as well as a role in the television series Star Wars: The Clone Wars. The first lead computer generated character of the franchise, he has been portrayed by Ahmed Best in most of his appearances., \"Jar Jars primary role in Episode I was to provide comic relief for the audience. Upon the movies release, he was met with an overwhelmingly negative reception from both critics and audiences, and is today considered one of the most hated characters in the history of film.12\"",
+    "eyeColor": "orange",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5"
+    ],
+    "gender": "male",
+    "hairColor": "none",
+    "height": "196.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "mass": "66.0",
+    "skinColor": "orange"
+  },
+  "https://swapi.co/resource/human/12": {
+    "uri": "https://swapi.co/resource/human/12",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Wilhuff Tarkin",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "64BBY",
+    "desc": "Governor Wilhuff \"Grand Moff\" Tarkin, is a fictional character in the Star Wars franchise, first portrayed by Peter Cushing in the 1977 film Star Wars. He is the commander of the Death Star, the Galactic Empire\\s dwarf planet-sized super weapon. The character has been called \"one of the most formidable villains in Star Wars history.\"1",
+    "eyeColor": "blue",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "auburn, grey",
+    "height": "180.0",
+    "homeworld": "https://swapi.co/resource/planet/21",
+    "skinColor": "fair"
+  },
+  "https://swapi.co/resource/human/19": {
+    "uri": "https://swapi.co/resource/human/19",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Jek Tono Porkins",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": "https://swapi.co/resource/film/1",
+    "gender": "male",
+    "hairColor": "brown",
+    "height": "180.0",
+    "homeworld": "https://swapi.co/resource/planet/26",
+    "mass": "110.0",
+    "skinColor": "fair",
+    "starship": "https://swapi.co/resource/starship/12"
+  },
+  "https://swapi.co/resource/human/29": {
+    "uri": "https://swapi.co/resource/human/29",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Arvel Crynyd",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "None",
+    "eyeColor": "brown",
+    "film": "https://swapi.co/resource/film/3",
+    "gender": "male",
+    "hairColor": "brown",
+    "homeworld": "https://swapi.co/resource/planet/28",
+    "skinColor": "fair",
+    "starship": "https://swapi.co/resource/starship/28"
+  },
+  "https://swapi.co/resource/human/32": {
+    "uri": "https://swapi.co/resource/human/32",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Qui-Gon Jinn",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "92BBY",
+    "desc": "Qui-Gon Jinn is a fictional character in the Star Wars franchise, portrayed by Liam Neeson as the main protagonist of the 1999 film Star Wars: Episode I – The Phantom Menace.",
+    "eyeColor": "blue",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "brown",
+    "height": "193.0",
+    "homeworld": "https://swapi.co/resource/planet/28",
+    "mass": "89.0",
+    "skinColor": "fair",
+    "vehicle": "https://swapi.co/resource/vehicle/38"
+  },
+  "https://swapi.co/resource/human/43": {
+    "uri": "https://swapi.co/resource/human/43",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Shmi Skywalker",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "72BBY",
+    "desc": "None",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5"
+    ],
+    "gender": "female",
+    "hairColor": "black",
+    "height": "163.0",
+    "homeworld": "https://swapi.co/resource/planet/1",
+    "skinColor": "fair"
+  },
+  "https://swapi.co/resource/human/60": {
+    "uri": "https://swapi.co/resource/human/60",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Gregar Typho",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "None",
+    "eyeColor": "brown",
+    "film": "https://swapi.co/resource/film/5",
+    "gender": "male",
+    "hairColor": "black",
+    "height": "185.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "mass": "85.0",
+    "skinColor": "dark",
+    "starship": "https://swapi.co/resource/starship/39"
+  },
+  "https://swapi.co/resource/human/68": {
+    "uri": "https://swapi.co/resource/human/68",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Bail Prestor Organa",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "67BBY",
+    "desc": "Senator Bail Prestor Organa of Alderaan, is a fictional character in the Star Wars franchise, portrayed by actor Jimmy Smits in Attack of the Clones (2002), Revenge of the Sith (2005), and Rogue One (2016). He is the senator from the planet Alderaan, one of the founding members of the Rebel Alliance, and the adoptive father of Leia Organa, a main character in the franchise.",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "black",
+    "height": "191.0",
+    "homeworld": "https://swapi.co/resource/planet/2",
+    "skinColor": "tan"
+  },
+  "https://swapi.co/resource/human/81": {
+    "uri": "https://swapi.co/resource/human/81",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Raymus Antilles",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "None",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "brown",
+    "height": "188.0",
+    "homeworld": "https://swapi.co/resource/planet/2",
+    "mass": "79.0",
+    "skinColor": "light"
+  },
+  "https://swapi.co/resource/human/86": {
+    "uri": "https://swapi.co/resource/human/86",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Poe Dameron",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "desc": "\"Poe Dameron is a fictional character in the Star Wars franchise. Introduced in the 2015 film Star Wars: The Force Awakens, he is portrayed by Oscar Isaac. Poe is an X-wing fighter pilot for the Resistance who inadvertently brings renegade stormtrooper Finn (John Boyega) and Jakku scavenger Rey (Daisy Ridley) into the fight against—and eventually a victory over—the sinister First Order. He is featured in The Force Awakens media and merchandising as well as an eponymous comic book series, and will appear in the films forthcoming sequel, Star Wars: The Last Jedi. Isaac and the character have received positive reviews, with Poe being compared to the characterization of Han Solo (Harrison Ford) in the original Star Wars film trilogy.\"",
+    "eyeColor": "brown",
+    "film": "https://swapi.co/resource/film/7",
+    "gender": "male",
+    "hairColor": "brown",
+    "homeworld": "https://swapi.co/resource/planet/28",
+    "skinColor": "light",
+    "starship": "https://swapi.co/resource/starship/77"
+  },
+  "https://swapi.co/resource/human/9": {
+    "uri": "https://swapi.co/resource/human/9",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Biggs Darklighter",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "24BBY",
+    "desc": "Rogue Squadron is a starfighter squadron in the Star Wars franchise. Many surviving members of Red Squadron, the X-wing attack force that Luke Skywalker joins during the Battle of Yavin in Star Wars Episode IV: A New Hope (1977), later join Rogue Squadron. The squadron appears in The Empire Strikes Back (1980) as Rogue Group. In the 2016 film Rogue One, Rebel fighters on a suicide mission to steal the plans for the Death Star self-identify as \"Rogue One\", a possible precursor to Rogue Squadron.1, Rogue Squadron is prominently featured in the comic book series Star Wars: X-wing, the ten-volume novel series Star Wars: X-wing, and the video game series Star Wars: Rogue Squadron. The unit is depicted as consisting of \"the best pilots and the best fighters\".2",
+    "eyeColor": "brown",
+    "film": "https://swapi.co/resource/film/1",
+    "gender": "male",
+    "hairColor": "black",
+    "height": "183.0",
+    "homeworld": "https://swapi.co/resource/planet/1",
+    "mass": "84.0",
+    "skinColor": "light",
+    "starship": "https://swapi.co/resource/starship/12"
+  },
+  "https://swapi.co/resource/iktotchi/56": {
+    "uri": "https://swapi.co/resource/iktotchi/56",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Iktotchi"
+    ],
+    "label": "Saesee Tiin",
+    "http://www.ontotext.com/business-object/type": "Iktotchi",
+    "desc": "None",
+    "eyeColor": "orange",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "none",
+    "height": "188.0",
+    "homeworld": "https://swapi.co/resource/planet/47",
+    "skinColor": "pale"
+  },
+  "https://swapi.co/resource/mirialan/64": {
+    "uri": "https://swapi.co/resource/mirialan/64",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Mirialan"
+    ],
+    "label": "Luminara Unduli",
+    "http://www.ontotext.com/business-object/type": "Mirialan",
+    "birthYear": "58BBY",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": [
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "female",
+    "hairColor": "black",
+    "height": "170.0",
+    "homeworld": "https://swapi.co/resource/planet/51",
+    "mass": "56.2",
+    "skinColor": "yellow"
+  },
+  "https://swapi.co/resource/moncalamari/27": {
+    "uri": "https://swapi.co/resource/moncalamari/27",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Moncalamari"
+    ],
+    "label": "Ackbar",
+    "http://www.ontotext.com/business-object/type": "Moncalamari",
+    "birthYear": "41BBY",
+    "desc": "None",
+    "eyeColor": "orange",
+    "film": [
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/7"
+    ],
+    "gender": "male",
+    "hairColor": "none",
+    "height": "180.0",
+    "homeworld": "https://swapi.co/resource/planet/31",
+    "mass": "83.0",
+    "skinColor": "brown mottle"
+  },
+  "https://swapi.co/resource/rodian/15": {
+    "uri": "https://swapi.co/resource/rodian/15",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Rodian"
+    ],
+    "label": "Greedo",
+    "http://www.ontotext.com/business-object/type": "Rodian",
+    "birthYear": "44BBY",
+    "desc": "Greedo (or Greedo the Young) is a fictional character from the Star Wars franchise. He is portrayed by Paul Blake as well as Maria De Aragon in some close-in pickup shots in Star Wars (1977). The character is part of a fan controversy known as \"Han shot first\".",
+    "eyeColor": "black",
+    "film": "https://swapi.co/resource/film/1",
+    "gender": "male",
+    "height": "173.0",
+    "homeworld": "https://swapi.co/resource/planet/23",
+    "mass": "74.0",
+    "skinColor": "green"
+  },
+  "https://swapi.co/resource/sullustan/31": {
+    "uri": "https://swapi.co/resource/sullustan/31",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Sullustan"
+    ],
+    "label": "Nien Nunb",
+    "http://www.ontotext.com/business-object/type": "Sullustan",
+    "desc": "Nien Nunb is a fictional character in the Star Wars franchise. Introduced in the 1983 film Return of the Jedi, he was brought to life both as a puppet and a costumed actor during the film. Nunb was puppeteered by Mike Quinn and was portrayed by Richard Bonehill in wide shots. The character was voiced by Kipsang Rotich, a Kenyan student who spoke in his native Kalenjin language, as well as in the Kikuyu language. Quinn and Rotich returned to the role for the 2015 film Star Wars: The Force Awakens, with the former confirmed for the 2017 film Star Wars: The Last Jedi., Within the fictional Star Wars universe, Nien Nunb was an arms dealer of the Sullustan species who joined the Alliance to Restore the Republic during the Galactic Civil War. Three decades later, Nunb was a starfighter pilot in the Resistance. He fought in the First Order–Resistance conflict, including the Battle of Starkiller Base.",
+    "eyeColor": "black",
+    "film": "https://swapi.co/resource/film/3",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "160.0",
+    "homeworld": "https://swapi.co/resource/planet/33",
+    "mass": "68.0",
+    "skinColor": "grey",
+    "starship": "https://swapi.co/resource/starship/10"
+  },
+  "https://swapi.co/resource/tholothian/55": {
+    "uri": "https://swapi.co/resource/tholothian/55",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Tholothian"
+    ],
+    "label": "Adi Gallia",
+    "http://www.ontotext.com/business-object/type": "Tholothian",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "female",
+    "hairColor": "none",
+    "height": "184.0",
+    "homeworld": "https://swapi.co/resource/planet/9",
+    "mass": "50.0",
+    "skinColor": "dark"
+  },
+  "https://swapi.co/resource/togruta/78": {
+    "uri": "https://swapi.co/resource/togruta/78",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Togruta"
+    ],
+    "label": "Shaak Ti",
+    "http://www.ontotext.com/business-object/type": "Togruta",
+    "desc": "None",
+    "eyeColor": "black",
+    "film": [
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "female",
+    "hairColor": "none",
+    "height": "178.0",
+    "homeworld": "https://swapi.co/resource/planet/58",
+    "mass": "57.0",
+    "skinColor": "red, blue, white"
+  },
+  "https://swapi.co/resource/toydarian/40": {
+    "uri": "https://swapi.co/resource/toydarian/40",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Toydarian"
+    ],
+    "label": "Watto",
+    "http://www.ontotext.com/business-object/type": "Toydarian",
+    "desc": "\"Watto is a fictional character in the Star Wars franchise, featured in the films The Phantom Menace and Attack of the Clones. He is computer-generated and played by voice actor Andy Secombe. He is a mean-tempered, greedy Toydarian, and owner of a second-hand goods store in Mos Espa on the planet Tatooine. Among Wattos belongings are the slaves Shmi Skywalker and her son, Anakin. He acquires them after winning a podracing bet with Gardulla the Hutt, and he puts them both to work in his store. Anakin demonstrates an incredible aptitude for equipment repair, and Watto decides to profit from it by having the boy fix various broken equipment in the store. He eventually loses Anakin in a podracing bet with Qui-Gon Jinn when he bets on a competitor, Sebulba, who is defeated by Anakin.\"",
+    "eyeColor": "yellow",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5"
+    ],
+    "gender": "male",
+    "hairColor": "black",
+    "height": "137.0",
+    "homeworld": "https://swapi.co/resource/planet/34",
+    "skinColor": "blue, grey"
+  },
+  "https://swapi.co/resource/zabrak/54": {
+    "uri": "https://swapi.co/resource/zabrak/54",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Zabrak"
+    ],
+    "label": "Eeth Koth",
+    "http://www.ontotext.com/business-object/type": "Zabrak",
+    "desc": "None",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "black",
+    "height": "171.0",
+    "homeworld": "https://swapi.co/resource/planet/45",
+    "skinColor": "brown"
+  },
+  "https://swapi.co/resource/cerean/52": {
+    "uri": "https://swapi.co/resource/cerean/52",
+    "type": [
+      "https://swapi.co/vocabulary/Cerean",
+      "https://swapi.co/vocabulary/Character"
+    ],
+    "label": "Ki-Adi-Mundi",
+    "http://www.ontotext.com/business-object/type": "Cerean",
+    "birthYear": "92BBY",
+    "desc": "None",
+    "eyeColor": "yellow",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "white",
+    "height": "198.0",
+    "homeworld": "https://swapi.co/resource/planet/43",
+    "mass": "82.0",
+    "skinColor": "pale"
+  },
+  "https://swapi.co/resource/human/25": {
+    "uri": "https://swapi.co/resource/human/25",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Lando Calrissian",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "31BBY",
+    "desc": "Lando Calrissian is a fictional character in the Star Wars franchise. He is portrayed by Billy Dee Williams in The Empire Strikes Back and Return of the Jedi, and will be played by Donald Glover in the upcoming standalone film, Solo: A Star Wars Story.1 He also appears frequently in the Star Wars expanded universe of novels, comic books and video games, including a series of novels in which he is the protagonist.",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3"
+    ],
+    "gender": "male",
+    "hairColor": "black",
+    "height": "177.0",
+    "homeworld": "https://swapi.co/resource/planet/30",
+    "mass": "79.0",
+    "skinColor": "dark",
+    "starship": "https://swapi.co/resource/starship/10"
+  },
+  "https://swapi.co/resource/human/51": {
+    "uri": "https://swapi.co/resource/human/51",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Mace Windu",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "72BBY",
+    "desc": "\"Mace Windu is a fictional character in the Star Wars franchise, portrayed by actor Samuel L. Jackson in the prequel films and voiced by voice-actor Terrence C. Carson in other projects. He appears as Master of the Jedi High Council and one of the last members of the orders upper echelons before the Galactic Republics fall. He is the Councils primary liaison, although the Clone Wars caused him to question his most firmly held beliefs.1\"",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "none",
+    "height": "188.0",
+    "homeworld": "https://swapi.co/resource/planet/42",
+    "mass": "84.0",
+    "skinColor": "dark"
+  },
+  "https://swapi.co/resource/human/6": {
+    "uri": "https://swapi.co/resource/human/6",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Owen Lars",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "52BBY",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "brown, grey",
+    "height": "178.0",
+    "homeworld": "https://swapi.co/resource/planet/1",
+    "mass": "120.0",
+    "skinColor": "light"
+  },
+  "https://swapi.co/resource/human/67": {
+    "uri": "https://swapi.co/resource/human/67",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Dooku",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "102BBY",
+    "desc": "Count Dooku is a fictional character from the Star Wars franchise, appearing in Star Wars: Episode II – Attack of the Clones and Star Wars: Episode III – Revenge of the Sith (portrayed by Christopher Lee).1 He was also voiced by Corey Burton in the animated series Star Wars: The Clone Wars and Star Wars: Clone Wars., \"Once a respected Jedi Master, he falls to the dark side of the Force after the death of his former Padawan, Qui-Gon Jinn, and becomes Darth Sidious second apprentice under the name Darth Tyranus. As the founder of the Confederacy of Independent Systems, he is instrumental in the Clone Wars. Dooku was trained by Yoda as a Padawan learner.\"",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "white",
+    "height": "193.0",
+    "homeworld": "https://swapi.co/resource/planet/52",
+    "mass": "80.0",
+    "skinColor": "fair",
+    "vehicle": "https://swapi.co/resource/vehicle/55"
+  },
+  "https://swapi.co/resource/human/7": {
+    "uri": "https://swapi.co/resource/human/7",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Beru Whitesun lars",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "47BBY",
+    "desc": "None",
+    "eyeColor": "blue",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "female",
+    "hairColor": "brown",
+    "height": "165.0",
+    "homeworld": "https://swapi.co/resource/planet/1",
+    "mass": "75.0",
+    "skinColor": "light"
+  },
+  "https://swapi.co/resource/hutt/16": {
+    "uri": "https://swapi.co/resource/hutt/16",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Hutt"
+    ],
+    "label": "Jabba Desilijic Tiure",
+    "http://www.ontotext.com/business-object/type": "Hutt",
+    "birthYear": "600BBY",
+    "desc": "Jabba Desilijic Tiure,1 commonly known as Jabba the Hutt, is a fictional character and an antagonist in the Star Wars franchise created by George Lucas. He is depicted as a large, slug-like2 alien. His appearance has been described by film critic Roger Ebert as a cross between a toad and the Cheshire Cat.3, \"In the original theatrical releases of the original Star Wars trilogy, Jabba the Hutt first appeared in Return of the Jedi (1983), though he is mentioned in Star Wars (1977) and The Empire Strikes Back (1980), and a previously deleted scene involving Jabba the Hutt was added to the 1997 theatrical re-release and subsequent home media releases of Star Wars. Jabba is introduced as the de facto leader of the Desilijic-Hutt Cartel, and the most powerful crime boss on Tatooine, who has a bounty on Han Solos head. Jabba employs a retinue of career criminals, bounty hunters, smugglers, assassins and bodyguards to operate his criminal empire. He keeps a host of entertainers at his disposal at his palace: slaves, droids and alien creatures. Jabba has a grim sense of humor, an insatiable appetite, and affinities for gambling, slave girls, and torture.1\", \"The character was incorporated into the Star Wars merchandising campaign that corresponded with the theatrical release of Return of the Jedi. Besides the films, Jabba the Hutt is featured in Star Wars Legends literature. Jabba the Hutts image has since played an influential role in popular culture, particularly in the United States. The name is used as a satirical literary device and a political caricature to underscore negative qualities such as morbid obesity and corruption.45\"",
+    "eyeColor": "orange",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/4"
+    ],
+    "gender": "hermaphrodite",
+    "height": "175.0",
+    "homeworld": "https://swapi.co/resource/planet/24",
+    "mass": "1358.0",
+    "skinColor": "green-tan, brown"
+  },
+  "https://swapi.co/resource/kaleesh/79": {
+    "uri": "https://swapi.co/resource/kaleesh/79",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Kaleesh"
+    ],
+    "label": "Grievous",
+    "http://www.ontotext.com/business-object/type": "Kaleesh",
+    "desc": "\"General Grievous is a fictional character in the Star Wars franchise. A former Kaleesh warlord named Qymaen jai Sheelal, he is the Supreme Commander of the Confederacy of Independent Systems during the Clone Wars against the Galactic Republic and is trained in all lightsaber combat forms to ensure the Jedis destruction.\", The character was originally introduced in 2004 in the animated series Star Wars: Clone Wars, before being part of the film Star Wars: Episode III – Revenge of the Sith.",
+    "eyeColor": "green, yellow",
+    "film": "https://swapi.co/resource/film/6",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "216.0",
+    "homeworld": "https://swapi.co/resource/planet/59",
+    "mass": "159.0",
+    "skinColor": "brown, white",
+    "starship": "https://swapi.co/resource/starship/74",
+    "vehicle": "https://swapi.co/resource/vehicle/60"
+  },
+  "https://swapi.co/resource/nautolan/53": {
+    "uri": "https://swapi.co/resource/nautolan/53",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Nautolan"
+    ],
+    "label": "Kit Fisto",
+    "http://www.ontotext.com/business-object/type": "Nautolan",
+    "desc": "None",
+    "eyeColor": "black",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "none",
+    "height": "196.0",
+    "homeworld": "https://swapi.co/resource/planet/44",
+    "mass": "87.0",
+    "skinColor": "green"
+  },
+  "https://swapi.co/resource/neimodian/33": {
+    "uri": "https://swapi.co/resource/neimodian/33",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Neimodian"
+    ],
+    "label": "Nute Gunray",
+    "http://www.ontotext.com/business-object/type": "Neimodian",
+    "desc": "None",
+    "eyeColor": "red",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "none",
+    "height": "191.0",
+    "homeworld": "https://swapi.co/resource/planet/18",
+    "mass": "90.0",
+    "skinColor": "mottled green"
+  },
+  "https://swapi.co/resource/twilek/46": {
+    "uri": "https://swapi.co/resource/twilek/46",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Twilek"
+    ],
+    "label": "Ayla Secura",
+    "http://www.ontotext.com/business-object/type": "Twilek",
+    "birthYear": "48BBY",
+    "desc": "None",
+    "eyeColor": "hazel",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "female",
+    "hairColor": "none",
+    "height": "178.0",
+    "homeworld": "https://swapi.co/resource/planet/37",
+    "mass": "55.0",
+    "skinColor": "blue"
+  },
+  "https://swapi.co/resource/zabrak/44": {
+    "uri": "https://swapi.co/resource/zabrak/44",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Zabrak"
+    ],
+    "label": "Darth Maul",
+    "http://www.ontotext.com/business-object/type": "Zabrak",
+    "birthYear": "54BBY",
+    "desc": "\"Darth Maul, later known simply as Maul, is a fictional character in the Star Wars franchise. Trained as Darth Sidiouss first apprentice, he serves as a Sith Lord and a master of wielding a double-bladed lightsaber. He first appears in Star Wars: Episode I – The Phantom Menace (portrayed by Ray Park and voiced by Peter Serafinowicz), and later makes appearances in Star Wars: The Clone Wars and Star Wars Rebels, voiced by Samuel Witwer.\"",
+    "eyeColor": "yellow",
+    "film": "https://swapi.co/resource/film/4",
+    "gender": "male",
+    "hairColor": "none",
+    "height": "175.0",
+    "homeworld": "https://swapi.co/resource/planet/36",
+    "mass": "80.0",
+    "skinColor": "red",
+    "starship": "https://swapi.co/resource/starship/41",
+    "vehicle": "https://swapi.co/resource/vehicle/42"
+  },
+  "https://swapi.co/resource/human/22": {
+    "uri": "https://swapi.co/resource/human/22",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Boba Fett",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "31.5BBY",
+    "desc": "Boba Fett is a fictional character in the Star Wars franchise. In The Empire Strikes Back and Return of the Jedi, he is a bounty hunter hired by Darth Vader and also employed by Jabba the Hutt. He was also added briefly to the original film Star Wars when the film was digitally remastered. Star Wars: Episode II – Attack of the Clones establishes his origin as an unaltered clone of the bounty hunter Jango Fett raised as his son. He also appears in several episodes of Star Wars: The Clone Wars cartoon series which further describes his growth as a villain in the Star Wars universe. His aura of danger and mystery has created a cult following for the character.",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/5"
+    ],
+    "gender": "male",
+    "hairColor": "black",
+    "height": "183.0",
+    "homeworld": "https://swapi.co/resource/planet/10",
+    "mass": "78.2",
+    "skinColor": "fair",
+    "starship": "https://swapi.co/resource/starship/21"
+  },
+  "https://swapi.co/resource/keldor/58": {
+    "uri": "https://swapi.co/resource/keldor/58",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Keldor"
+    ],
+    "label": "Plo Koon",
+    "http://www.ontotext.com/business-object/type": "Keldor",
+    "birthYear": "22BBY",
+    "desc": "None",
+    "eyeColor": "black",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "none",
+    "height": "188.0",
+    "homeworld": "https://swapi.co/resource/planet/49",
+    "mass": "80.0",
+    "skinColor": "orange",
+    "starship": "https://swapi.co/resource/starship/48"
+  },
+  "https://swapi.co/resource/human/18": {
+    "uri": "https://swapi.co/resource/human/18",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Wedge Antilles",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "21BBY",
+    "desc": "Wedge Antilles is a fictional character in the Star Wars franchise. He is a supporting character portrayed by Denis Lawson in the original Star Wars trilogy.1 Antilles is a starfighter pilot for the Rebel Alliance, and founded Rogue Squadron with his friend Luke Skywalker. Wedge is notable for being the only Rebel pilot to have survived both attack runs on the Death Stars at the battles of Yavin and Endor.1 He also appears in the Star Wars expanded universe, most notably as the lead character in most of the X-Wing novels.",
+    "eyeColor": "hazel",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3"
+    ],
+    "gender": "male",
+    "hairColor": "brown",
+    "height": "170.0",
+    "homeworld": "https://swapi.co/resource/planet/22",
+    "mass": "77.0",
+    "skinColor": "fair",
+    "starship": "https://swapi.co/resource/starship/12",
+    "vehicle": "https://swapi.co/resource/vehicle/14"
+  },
+  "https://swapi.co/resource/human/21": {
+    "uri": "https://swapi.co/resource/human/21",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Palpatine",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "82BBY",
+    "desc": "Sheev Palpatine3, also known as Darth Sidious and The Emperor, is a fictional character and one of the primary antagonists of the Star Wars franchise,4 mainly portrayed by Ian McDiarmid. In the original trilogy, he is depicted as the aged, pale-faced and cloaked Emperor of the Galactic Empire and the master of Darth Vader. In the prequel trilogy, he is portrayed as a charismatic Senator from Naboo who uses deception and political manipulation to rise to the position of Supreme Chancellor of the Galactic Republic, and then reorganizes the Republic into the Galactic Empire, with himself as Emperor., \"Though outwardly appearing to be a well-intentioned public servant and supporter of democracy prior to becoming Emperor,5 he is actually Darth Sidious, the Dark Lord of the Sith – a cult of practitioners of the dark side of the Force previously thought to have been extinct in the Star Wars galaxy for a millennium.5 As Sidious, he instigates the Clone Wars, nearly destroys the Jedi, and transforms the Republic into the Empire. He also manipulates Jedi Knight Anakin Skywalker into turning to the dark side and serving at his side as Darth Vader. Palpatines reign is brought to an end when Vader kills him to save his son, Luke Skywalker.\", Since the initial theatrical run of Return of the Jedi, Palpatine has become a widely recognized popular culture symbol of evil, sinister deception, dictatorship, tyranny, and the subversion of democracy.",
+    "eyeColor": "yellow",
+    "film": [
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "grey",
+    "height": "170.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "mass": "75.0",
+    "skinColor": "pale"
+  },
+  "https://swapi.co/resource/human/4": {
+    "uri": "https://swapi.co/resource/human/4",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Darth Vader",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "41.9BBY",
+    "desc": "Darth Vader, also known by his birth name Anakin Skywalker, is a fictional character in the Star Wars franchise.123 Vader appears in the original film trilogy as a pivotal antagonist whose actions drive the plot, while his past as Anakin Skywalker and the story of his corruption are central to the narrative of the prequel trilogy., The character was created by George Lucas and has been portrayed by numerous actors. His appearances span the first six Star Wars films, as well as Rogue One, and his character is heavily referenced in Star Wars: The Force Awakens. He is also an important character in the Star Wars expanded universe of television series, video games, novels, literature and comic books. Originally a Jedi prophesied to bring balance to the Force, he falls to the dark side of the Force and serves the evil Galactic Empire at the right hand of his Sith master, Emperor Palpatine (also known as Darth Sidious).4 He is also the father of Luke Skywalker and Princess Leia Organa, secret husband of Padmé Amidala and grandfather of Kylo Ren., Darth Vader has become one of the most iconic villains in popular culture, and has been listed among the greatest villains and fictional characters ever.56 The American Film Institute listed him as the third greatest movie villain in cinema history on 100 Years... 100 Heroes and Villains, behind Hannibal Lecter and Norman Bates.7 However, other critics consider him a tragic hero, citing his original motivations for the greater good before his fall to the dark side.89",
+    "eyeColor": "yellow",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "none",
+    "height": "202.0",
+    "homeworld": "https://swapi.co/resource/planet/1",
+    "mass": "136.0",
+    "skinColor": "white",
+    "starship": "https://swapi.co/resource/starship/13"
+  },
+  "https://swapi.co/resource/yodasspecies/20": {
+    "uri": "https://swapi.co/resource/yodasspecies/20",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Yodasspecies"
+    ],
+    "label": "Yoda",
+    "http://www.ontotext.com/business-object/type": "Yodasspecies",
+    "birthYear": "896BBY",
+    "desc": "Yoda is a fictional character in the Star Wars franchise created by George Lucas, first appearing in the 1980 film The Empire Strikes Back. In the original films, he trains Luke Skywalker to fight against the Galactic Empire. In the prequel films, he serves as the Grand Master of the Jedi Order and as a high-ranking general of Clone Troopers in the Clone Wars. Following his death in Return of the Jedi at the age of 900, Yoda was the oldest living character in the Star Wars franchise in canon, until the introduction of Maz Kanata in Star Wars: The Force Awakens.",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "white",
+    "height": "66.0",
+    "homeworld": "https://swapi.co/resource/planet/28",
+    "mass": "17.0",
+    "skinColor": "green"
+  },
+  "https://swapi.co/resource/droid/2": {
+    "uri": "https://swapi.co/resource/droid/2",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Droid"
+    ],
+    "label": "C-3PO",
+    "http://www.ontotext.com/business-object/type": "Droid",
+    "birthYear": "112BBY",
+    "desc": "C-3PO (/siːˈθriːpi.oʊ/) or See-Threepio is a humanoid robot character from the Star Wars franchise who appears in the original trilogy, the prequel trilogy and the sequel trilogy. Built by Anakin Skywalker, C-3PO was designed as a protocol droid intended to assist in etiquette, customs, and translation, boasting that he is \"fluent in over six million forms of communication\". Along with his astromech droid counterpart and friend R2-D2, C-3PO provides comic relief within the narrative structure of the films, and serves as a foil. Anthony Daniels has portrayed the character in all nine Star Wars cinematic films released to date, including Rogue One and the animated The Clone Wars; C-3PO and R2-D2 are the only characters to appear in every film., \"Despite his oblivious nature, C-3PO has played a pivotal role in the Galaxys history, appearing under the service of Shmi Skywalker, the Lars homestead, Padmé Amidala, Raymus Antilles, Luke Skywalker, and Leia Organa. In the majority of depictions, C-3POs physical appearance is primarily a polished gold plating, although his appearance varies throughout the films; including the absence of metal coverings in The Phantom Menace, a dull copper plating in Attack of the Clones, a silver lower right leg introduced in A New Hope, and a red left arm in The Force Awakens.1 C-3PO also appears frequently in the Star Wars Canon and Star Wars Legends continuities of novels, comic books, and video games, and was the protagonist in the ABC television show Droids.\"",
+    "eyeColor": "yellow",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "height": "167.0",
+    "homeworld": "https://swapi.co/resource/planet/1",
+    "mass": "75.0",
+    "skinColor": "gold"
+  },
+  "https://swapi.co/resource/human/14": {
+    "uri": "https://swapi.co/resource/human/14",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Han Solo",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "29BBY",
+    "desc": "Han Solo is a character in the Star Wars franchise. In the original film trilogy, Han and his co-pilot, Chewbacca, became involved in the Rebel Alliance\\s struggle against the Galactic Empire. During the course of the Star Wars narrative, he becomes a chief figure in the Alliance and succeeding galactic governments. Star Wars creator George Lucas described the character as \"a loner who realizes the importance of being part of a group and helping for the common good\".2 Harrison Ford portrayed the character in the original Star Wars trilogy as well as The Force Awakens. Alden Ehrenreich will portray a young Han Solo in Solo: A Star Wars Story.",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/7"
+    ],
+    "gender": "male",
+    "hairColor": "brown",
+    "height": "180.0",
+    "homeworld": "https://swapi.co/resource/planet/22",
+    "mass": "80.0",
+    "skinColor": "fair",
+    "starship": [
+      "https://swapi.co/resource/starship/10",
+      "https://swapi.co/resource/starship/22"
+    ]
+  },
+  "https://swapi.co/resource/human/35": {
+    "uri": "https://swapi.co/resource/human/35",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Padmé Amidala",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "46BBY",
+    "desc": "Padmé Amidala (born Padmé Naberrie) is a fictional character in the Star Wars franchise, appearing in the prequel trilogy portrayed by actress Natalie Portman. She served as the Princess of Theed and later Queen of Naboo. After her reign, she became a senator in the Galactic Senate, an anti-war movement spokesperson, and co-founder of the opposition-faction that later emerged as the Rebel Alliance.2 She was secretly married to the Jedi Anakin Skywalker, and the biological mother of Luke Skywalker and Leia Organa, which makes her the mother-in-law of Han Solo, and the grandmother of Kylo Ren.",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "female",
+    "hairColor": "brown",
+    "height": "165.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "mass": "45.0",
+    "skinColor": "light",
+    "starship": [
+      "https://swapi.co/resource/starship/39",
+      "https://swapi.co/resource/starship/49",
+      "https://swapi.co/resource/starship/64"
+    ]
+  },
+  "https://swapi.co/resource/human/5": {
+    "uri": "https://swapi.co/resource/human/5",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Leia Organa",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "19BBY",
+    "desc": "\"Princess Leia Organa of Alderaan (also Senator Leia Organa or General Leia Organa) is a fictional character in the Star Wars franchise, portrayed in films by Carrie Fisher. Introduced in the original Star Wars film in 1977, Leia is princess of the planet Alderaan, a member of the Imperial Senate and an agent of the Rebel Alliance. She thwarts the sinister Sith Lord Darth Vader and helps bring about the destruction of the Empires cataclysmic superweapon, the Death Star. In The Empire Strikes Back (1980), Leia commands a Rebel base and evades Vader as she falls in love with the smuggler, Han Solo. In Return of the Jedi (1983), Leia leads the operation to rescue Han from the crime lord Jabba the Hutt, and is revealed to be Vaders daughter and the twin sister of Luke Skywalker. The prequel film Revenge of the Sith (2005) establishes that the twins mother is Senator (and former queen) Padmé Amidala of Naboo, who dies after childbirth. Leia is adopted by Senator Bail and Queen Breha Organa of Alderaan. In The Force Awakens (2015), Leia is the founder and General of the Resistance against the First Order and has a son with Han named Ben, who goes by the name Kylo Ren.\", In the original Star Wars expanded universe (1977–2014) of novels, comics and video games, which are set in an alternate continuity, Leia continues her adventures with Han and Luke after Return of the Jedi, fighting Imperial resurgences and new threats to the galaxy. She becomes the Chief of State of the New Republic and a Jedi Master, and is the mother to three children by Han: Jaina, Jacen and Anakin Solo., One of the more popular Star Wars characters, Leia has been called a 1980s icon, a feminist hero and model for other adventure heroines. She has appeared in many derivative works and merchandising, and has been referenced or parodied in several TV shows and films. Her \"cinnamon buns\" hairstyle from Star Wars (1977) and metal bikini from Return of the Jedi have become cultural icons.",
+    "eyeColor": "brown",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/6",
+      "https://swapi.co/resource/film/7"
+    ],
+    "gender": "female",
+    "hairColor": "brown",
+    "height": "150.0",
+    "homeworld": "https://swapi.co/resource/planet/2",
+    "mass": "49.0",
+    "skinColor": "light",
+    "vehicle": "https://swapi.co/resource/vehicle/30"
+  },
+  "https://swapi.co/resource/droid/3": {
+    "uri": "https://swapi.co/resource/droid/3",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Droid"
+    ],
+    "label": "R2-D2",
+    "http://www.ontotext.com/business-object/type": "Droid",
+    "birthYear": "33BBY",
+    "desc": "R2-D2 is a fictional robot character in the Star Wars franchise created by George Lucas, who appears in the original trilogy, the prequel trilogy, the sequel trilogy, and Rogue One. A small astromech droid, R2-D2 is a major character and appears in all Star Wars films to date. Throughout the course of the films, he joins or supports Padmé Amidala, Anakin Skywalker, Leia Organa, Luke Skywalker, and Obi-Wan Kenobi in various points in the saga., \"English actor Kenny Baker played R2-D2 in all three original Star Wars films, and received billing credit for the character in the prequel trilogy, where Bakers role was reduced, as R2-D2 was portrayed mainly by radio controlled props and CGI models. In the sequel trilogy, Baker was credited as consultant for The Force Awakens, however Jimmy Vee also co-performed the character in some scenes. Vee later took over the role beginning in The Last Jedi.1 R2-D2s sounds and vocal effects were created by Ben Burtt. R2-D2 was designed in artwork by Ralph McQuarrie, co-developed by John Stears and built by Tony Dyson.\"",
+    "eyeColor": "red",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6",
+      "https://swapi.co/resource/film/7"
+    ],
+    "height": "96.0",
+    "homeworld": "https://swapi.co/resource/planet/8",
+    "mass": "32.0",
+    "skinColor": "white, blue"
+  },
+  "https://swapi.co/resource/human/11": {
+    "uri": "https://swapi.co/resource/human/11",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Anakin Skywalker",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "41.9BBY",
+    "desc": "Darth Vader, also known by his birth name Anakin Skywalker, is a fictional character in the Star Wars franchise.123 Vader appears in the original film trilogy as a pivotal antagonist whose actions drive the plot, while his past as Anakin Skywalker and the story of his corruption are central to the narrative of the prequel trilogy., The character was created by George Lucas and has been portrayed by numerous actors. His appearances span the first six Star Wars films, as well as Rogue One, and his character is heavily referenced in Star Wars: The Force Awakens. He is also an important character in the Star Wars expanded universe of television series, video games, novels, literature and comic books. Originally a Jedi prophesied to bring balance to the Force, he falls to the dark side of the Force and serves the evil Galactic Empire at the right hand of his Sith master, Emperor Palpatine (also known as Darth Sidious).4 He is also the father of Luke Skywalker and Princess Leia Organa, secret husband of Padmé Amidala and grandfather of Kylo Ren., Darth Vader has become one of the most iconic villains in popular culture, and has been listed among the greatest villains and fictional characters ever.56 The American Film Institute listed him as the third greatest movie villain in cinema history on 100 Years... 100 Heroes and Villains, behind Hannibal Lecter and Norman Bates.7 However, other critics consider him a tragic hero, citing his original motivations for the greater good before his fall to the dark side.89",
+    "eyeColor": "blue",
+    "film": [
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "blond",
+    "height": "188.0",
+    "homeworld": "https://swapi.co/resource/planet/1",
+    "mass": "84.0",
+    "skinColor": "fair",
+    "starship": [
+      "https://swapi.co/resource/starship/39",
+      "https://swapi.co/resource/starship/59",
+      "https://swapi.co/resource/starship/65"
+    ],
+    "vehicle": [
+      "https://swapi.co/resource/vehicle/44",
+      "https://swapi.co/resource/vehicle/46"
+    ]
+  },
+  "https://swapi.co/resource/wookiee/13": {
+    "uri": "https://swapi.co/resource/wookiee/13",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Wookiee"
+    ],
+    "label": "Chewbacca",
+    "http://www.ontotext.com/business-object/type": "Wookiee",
+    "birthYear": "200BBY",
+    "desc": "Chewbacca (/tʃuːˈbɑːkə/), nicknamed \"Chewie\", is a fictional character in the Star Wars franchise. He is a Wookiee, a tall, hirsute biped and intelligent species from the planet Kashyyyk. Chewbacca is the loyal friend and first mate of Han Solo, and serves as co-pilot on Solo\\s spaceship, the Millennium Falcon.1 Within the films of the main saga, Chewbacca is portrayed by Peter Mayhew in the Star Wars on Episodes from III to VIII (Mayhew shares the role with his body double Joonas Suotamo on Episode VII and VIII). Suotamo took over the role alone in Solo: A Star Wars Story. The character has also appeared on television, books, comics, and video games.",
+    "eyeColor": "blue",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/6",
+      "https://swapi.co/resource/film/7"
+    ],
+    "gender": "male",
+    "hairColor": "brown",
+    "height": "228.0",
+    "homeworld": "https://swapi.co/resource/planet/14",
+    "mass": "112.0",
+    "starship": [
+      "https://swapi.co/resource/starship/10",
+      "https://swapi.co/resource/starship/22"
+    ],
+    "vehicle": "https://swapi.co/resource/vehicle/19"
+  },
+  "https://swapi.co/resource/human/1": {
+    "uri": "https://swapi.co/resource/human/1",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Luke Skywalker",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "19BBY",
+    "desc": "Luke Skywalker is a fictional character and the main protagonist of the original film trilogy of the Star Wars franchise created by George Lucas. The character, portrayed by Mark Hamill, is an important figure in the Rebel Alliance\\s struggle against the Galactic Empire. He is the twin brother of Rebellion leader Princess Leia Organa of Alderaan, a friend and brother-in-law of smuggler Han Solo, an apprentice to Jedi Masters Obi-Wan \"Ben\" Kenobi and Yoda, the son of fallen Jedi Anakin Skywalker (Darth Vader) and Queen of Naboo/Republic Senator Padmé Amidala and maternal uncle of Kylo Ren / Ben Solo. The now non-canon Star Wars expanded universe depicts him as a powerful Jedi Master, husband of Mara Jade, the father of Ben Skywalker and maternal uncle of Jaina, Jacen and Anakin Solo., In 2015, the character was selected by Empire magazine as the 50th greatest movie character of all time.2 On their list of the 100 Greatest Fictional Characters, Fandomania.com ranked the character at number 14.3",
+    "eyeColor": "blue",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/6",
+      "https://swapi.co/resource/film/7"
+    ],
+    "gender": "male",
+    "hairColor": "blond",
+    "height": "172.0",
+    "homeworld": "https://swapi.co/resource/planet/1",
+    "mass": "77.0",
+    "skinColor": "fair",
+    "starship": [
+      "https://swapi.co/resource/starship/12",
+      "https://swapi.co/resource/starship/22"
+    ],
+    "vehicle": [
+      "https://swapi.co/resource/vehicle/14",
+      "https://swapi.co/resource/vehicle/30"
+    ]
+  },
+  "https://swapi.co/resource/human/10": {
+    "uri": "https://swapi.co/resource/human/10",
+    "type": [
+      "https://swapi.co/vocabulary/Character",
+      "https://swapi.co/vocabulary/Human"
+    ],
+    "label": "Obi-Wan Kenobi",
+    "http://www.ontotext.com/business-object/type": "Human",
+    "birthYear": "57BBY",
+    "desc": "Obi-Wan \"Ben\" Kenobi is a fictional character in the Star Wars franchise. Within the original trilogy he is portrayed by Sir Alec Guinness, while in the prequel trilogy a younger version of the character is portrayed by Ewan McGregor. In the original trilogy, he is a mentor to Luke Skywalker, to whom he introduces the ways of the Jedi. In the prequel trilogy, he is a master and friend to Anakin Skywalker. He is frequently featured as a main character in various other Star Wars media., \"Sir Alec Guinnesss portrayal of Obi-Wan in the original Star Wars (1977) remains the only time an actor has received an Oscar nomination (Best Supporting Actor) for acting in a Star Wars film.\"",
+    "eyeColor": "blue-gray",
+    "film": [
+      "https://swapi.co/resource/film/1",
+      "https://swapi.co/resource/film/2",
+      "https://swapi.co/resource/film/3",
+      "https://swapi.co/resource/film/4",
+      "https://swapi.co/resource/film/5",
+      "https://swapi.co/resource/film/6"
+    ],
+    "gender": "male",
+    "hairColor": "auburn, white",
+    "height": "182.0",
+    "homeworld": "https://swapi.co/resource/planet/20",
+    "mass": "77.0",
+    "skinColor": "fair",
+    "starship": [
+      "https://swapi.co/resource/starship/48",
+      "https://swapi.co/resource/starship/59",
+      "https://swapi.co/resource/starship/64",
+      "https://swapi.co/resource/starship/65",
+      "https://swapi.co/resource/starship/74"
+    ],
+    "vehicle": "https://swapi.co/resource/vehicle/38"
+  }
+}
