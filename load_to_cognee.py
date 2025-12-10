@@ -1,35 +1,113 @@
 #!/usr/bin/env python3
 """
 Script to load TTL (Turtle) RDF data into Cognee knowledge graph.
-Reads the data.ttl file and processes it through Cognee.
+Reads the data.ttl file, parses it to extract character data, and processes it through Cognee.
 """
 
 import asyncio
 import cognee
 import os
+import logging
 from pathlib import Path
 from dotenv import load_dotenv
+import rdflib
+from rdflib import RDF, RDFS
 
+# Import health check
+import sys
+sys.path.append(str(Path(__file__).parent)) # Ensure backend module is found
+from backend.utils.lm_studio_health import check_lm_studio_health
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+def parse_rdf_data(file_path):
+    """
+    Parses the RDF TTL file and extracts character attributes.
+    Returns a dictionary of characters and their attributes.
+    """
+    logger.info(f"Parsing RDF file: {file_path}")
+    g = rdflib.Graph()
+    g.parse(file_path, format="turtle")
+    
+    characters = {}
+    
+    # SPARQL query to get all properties of characters
+    query = """
+    PREFIX voc: <https://swapi.co/vocabulary/>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    
+    SELECT ?character ?p ?o
+    WHERE {
+        ?character a voc:Character .
+        ?character ?p ?o .
+    }
+    """
+    
+    results = g.query(query)
+    
+    for row in results:
+        char_uri = str(row.character)
+        pred = str(row.p)
+        obj = str(row.o)
+        
+        if char_uri not in characters:
+            characters[char_uri] = {"uri": char_uri}
+            
+        # Simplify predicate name (remove namespace)
+        if "vocabulary/" in pred:
+            key = pred.split("vocabulary/")[-1]
+        elif "rdf-schema#" in pred:
+            key = pred.split("rdf-schema#")[-1]
+        elif "1999/02/22-rdf-syntax-ns#" in pred:
+            key = pred.split("1999/02/22-rdf-syntax-ns#")[-1]
+        else:
+            key = pred
+            
+        # Handle multiple values for the same predicate (e.g. films)
+        if key in characters[char_uri]:
+            if isinstance(characters[char_uri][key], list):
+                characters[char_uri][key].append(obj)
+            else:
+                characters[char_uri][key] = [characters[char_uri][key], obj]
+        else:
+            characters[char_uri][key] = obj
+            
+    logger.info(f"Extracted {len(characters)} characters from RDF.")
+    return characters
 
 async def main():
-    # Load environment variables from .env file
-    # Cognee will automatically use LLM_PROVIDER, LLM_MODEL, LLM_ENDPOINT, LLM_API_KEY
+    # Load environment variables
     load_dotenv()
     
+    # Run Health Check
+    logger.info("Running LM Studio health check...")
+    health_status = await check_lm_studio_health()
+    if not health_status:
+        logger.error("LM Studio health check failed. Exiting.")
+        return
+
     # Path to the TTL file
     ttl_file_path = Path(__file__).parent / "data" / "data.ttl"
     
+    # Parse RDF Data
+    characters = parse_rdf_data(ttl_file_path)
+    
+    # Debug: Print first character to verify
+    if characters:
+        first_char_key = list(characters.keys())[0]
+        logger.info(f"Sample character data ({first_char_key}): {characters[first_char_key]}")
+
     print(f"Loading TTL file: {ttl_file_path}")
     print(f"Using LLM provider: {os.getenv('LLM_PROVIDER')}")
-    print(f"Using LLM endpoint: {os.getenv('LLM_ENDPOINT')}")
-    print(f"Using LLM model: {os.getenv('LLM_MODEL')}")
     
     # Prune existing data and metadata in Cognee
     print("\nResetting Cognee data...")
     await cognee.prune.prune_data()
     await cognee.prune.prune_system(metadata=True)
     
-    # Read the TTL file content
+    # Read the TTL file content for Cognee
     with open(ttl_file_path, 'r', encoding='utf-8') as f:
         ttl_content = f.read()
     
@@ -42,6 +120,8 @@ async def main():
     # Process the data to build the knowledge graph
     print("Building knowledge graph (cognifying)...")
     await cognee.cognify()
+    
+    logger.info("Cognee processing complete.")
 
 if __name__ == '__main__':
     asyncio.run(main())
