@@ -19,6 +19,8 @@ from rdflib import RDF, RDFS
 import sys
 sys.path.append(str(Path(__file__).parent)) # Ensure backend module is found
 from backend.utils.lm_studio_health import check_lm_studio_health
+from backend.knowledge.relationships import RelationshipClassifier, SemanticAnalyzer
+from backend.knowledge.graph_utils import build_graph, calculate_degree
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -165,6 +167,10 @@ async def main():
         logger.info("Starting enrichment pipeline...")
         enrichment_start_time = time.time()
         
+        # Initialize classifiers
+        rel_classifier = RelationshipClassifier()
+        sem_analyzer = SemanticAnalyzer()
+        
         # Limit to a subset for demonstration/performance if needed, or process all
         # For now, we'll process all but with a counter to track progress
         count = 0
@@ -179,16 +185,43 @@ async def main():
             logger.info(f"[{count}/{total}] Enriching {name}...")
             
             # Extract Relationships
-            relationships = await extract_relationships(name)
-            char_data["relationships"] = relationships
-            logger.debug(f"Relationships for {name}: {relationships}")
+            raw_relationships = await extract_relationships(name)
+            # Process raw text into structured objects
+            structured_relationships = []
+            if raw_relationships:
+                # Cognee returns a list of results, usually strings
+                for result in raw_relationships:
+                    # Assuming result is a string description
+                    if isinstance(result, str):
+                        structured_relationships.extend(rel_classifier.classify(result))
+                    # If it's a dict (Cognee might return structured data depending on query type), handle accordingly
+                    # For now, we assume text based on the prompt
+            
+            char_data["relationships"] = structured_relationships
+            logger.debug(f"Relationships for {name}: {structured_relationships}")
 
             # Semantic Enrichment
-            semantics = await enrich_character_semantics(name)
-            char_data["semantics"] = semantics
-            logger.debug(f"Semantics for {name}: {semantics}")
+            raw_semantics = await enrich_character_semantics(name)
+            # Process raw text into structured profile
+            semantic_profile = None
+            if raw_semantics:
+                # Combine all semantic results into one text for analysis
+                combined_text = " ".join([str(r) for r in raw_semantics])
+                semantic_profile = sem_analyzer.analyze(combined_text)
+                
+            char_data["semantics"] = semantic_profile
+            logger.debug(f"Semantics for {name}: {semantic_profile}")
 
         logger.info(f"Enrichment took {time.time() - enrichment_start_time:.2f} seconds")
+        
+        # Build Graph and Calculate Degrees
+        logger.info("Building relationship graph...")
+        graph = build_graph(characters)
+        
+        # Example: Calculate degree of separation for a few pairs (optional, or store in char data)
+        # For now, we just log the graph stats
+        logger.info(f"Graph built: {graph.number_of_nodes()} nodes, {graph.number_of_edges()} edges")
+        
     else:
         logger.warning("Skipping enrichment due to Cognee failure.")
     
