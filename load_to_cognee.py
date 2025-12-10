@@ -9,6 +9,7 @@ import cognee
 from cognee import SearchType
 import os
 import logging
+import time
 from pathlib import Path
 from dotenv import load_dotenv
 import rdflib
@@ -105,6 +106,7 @@ async def enrich_character_semantics(character_name):
         return []
 
 async def main():
+    start_time = time.time()
     # Load environment variables
     load_dotenv()
     
@@ -119,7 +121,9 @@ async def main():
     ttl_file_path = Path(__file__).parent / "data" / "data.ttl"
     
     # Parse RDF Data
+    rdf_start_time = time.time()
     characters = parse_rdf_data(ttl_file_path)
+    logger.info(f"RDF Parsing took {time.time() - rdf_start_time:.2f} seconds")
     
     # Debug: Print first character to verify
     if characters:
@@ -129,61 +133,74 @@ async def main():
     print(f"Loading TTL file: {ttl_file_path}")
     print(f"Using LLM provider: {os.getenv('LLM_PROVIDER')}")
     
-    # Prune existing data and metadata in Cognee
-    print("\nResetting Cognee data...")
-    await cognee.prune.prune_data()
-    await cognee.prune.prune_system(metadata=True)
-    
-    # Read the TTL file content for Cognee
-    with open(ttl_file_path, 'r', encoding='utf-8') as f:
-        ttl_content = f.read()
-    
-    print(f"Read {len(ttl_content)} characters from TTL file")
-    
-    # Add the TTL content to Cognee
-    print("Adding data to Cognee...")
-    await cognee.add(ttl_content, dataset_name="star-wars-ttl")
-    
-    # Process the data to build the knowledge graph
-    print("Building knowledge graph (cognifying)...")
-    await cognee.cognify()
-    
-    logger.info("Cognee processing complete.")
+    cognee_success = False
+    try:
+        cognee_start_time = time.time()
+        # Prune existing data and metadata in Cognee
+        print("\nResetting Cognee data...")
+        await cognee.prune.prune_data()
+        await cognee.prune.prune_system(metadata=True)
+        
+        # Read the TTL file content for Cognee
+        with open(ttl_file_path, 'r', encoding='utf-8') as f:
+            ttl_content = f.read()
+        
+        print(f"Read {len(ttl_content)} characters from TTL file")
+        
+        # Add the TTL content to Cognee
+        print("Adding data to Cognee...")
+        await cognee.add(ttl_content, dataset_name="star-wars-ttl")
+        
+        # Process the data to build the knowledge graph
+        print("Building knowledge graph (cognifying)...")
+        await cognee.cognify()
+        
+        logger.info(f"Cognee processing took {time.time() - cognee_start_time:.2f} seconds")
+        cognee_success = True
+    except Exception as e:
+        logger.error(f"Cognee processing failed: {e}. Proceeding with raw RDF data only.")
 
-    # Step 3: Extract Relationships
-    logger.info("Extracting relationships from Knowledge Graph...")
-    
-    # Limit to a subset for demonstration/performance if needed, or process all
-    # For now, we'll process all but with a counter to track progress
-    count = 0
-    total = len(characters)
-    
-    for char_uri, char_data in characters.items():
-        count += 1
-        name = char_data.get("label", "Unknown")
-        if name == "Unknown":
-            continue
+    if cognee_success:
+        # Step 3 & 4: Extract Relationships and Semantic Enrichment
+        logger.info("Starting enrichment pipeline...")
+        enrichment_start_time = time.time()
+        
+        # Limit to a subset for demonstration/performance if needed, or process all
+        # For now, we'll process all but with a counter to track progress
+        count = 0
+        total = len(characters)
+        
+        for char_uri, char_data in characters.items():
+            count += 1
+            name = char_data.get("label", "Unknown")
+            if name == "Unknown":
+                continue
+                
+            logger.info(f"[{count}/{total}] Enriching {name}...")
             
-        logger.info(f"[{count}/{total}] Extracting relationships for {name}...")
-        relationships = await extract_relationships(name)
-        
-        # Store relationships in the character data structure
-        char_data["relationships"] = relationships
-        
-        logger.debug(f"Relationships for {name}: {relationships}")
+            # Extract Relationships
+            relationships = await extract_relationships(name)
+            char_data["relationships"] = relationships
+            logger.debug(f"Relationships for {name}: {relationships}")
 
-        # Step 4: Semantic Enrichment
-        logger.info(f"[{count}/{total}] Enriching semantics for {name}...")
-        semantics = await enrich_character_semantics(name)
-        char_data["semantics"] = semantics
-        logger.debug(f"Semantics for {name}: {semantics}")
+            # Semantic Enrichment
+            semantics = await enrich_character_semantics(name)
+            char_data["semantics"] = semantics
+            logger.debug(f"Semantics for {name}: {semantics}")
 
-    logger.info("Relationship extraction and semantic enrichment complete.")
+        logger.info(f"Enrichment took {time.time() - enrichment_start_time:.2f} seconds")
+    else:
+        logger.warning("Skipping enrichment due to Cognee failure.")
+    
+    total_time = time.time() - start_time
+    logger.info(f"Total execution time: {total_time:.2f} seconds")
     
     # Debug: Print a sample with relationships and semantics
     if characters:
         first_char_key = list(characters.keys())[0]
-        logger.info(f"Enriched character data ({characters[first_char_key].get('label')}): {characters[first_char_key]}")
+        logger.info(f"Final Enriched Character Data Sample ({characters[first_char_key].get('label')}): {characters[first_char_key]}")
+    
+    return characters
 
 if __name__ == '__main__':
     asyncio.run(main())
